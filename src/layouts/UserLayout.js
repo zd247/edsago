@@ -18,6 +18,8 @@ import VerticalAppBarContent from './components/vertical/AppBarContent'
 import { useSettings } from 'src/@core/hooks/useSettings'
 
 const UserLayout = ({ children }) => {
+  const { pathname } = useRouter()
+
   // ** Hooks
   const { settings, saveSettings } = useSettings()
   const { pathname } = useRouter()
