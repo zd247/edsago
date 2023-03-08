@@ -46,9 +46,6 @@ if (themeConfig.routingLoader) {
 const App = props => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props
 
-  console.log('Component', Component)
-  console.log('pageProps', pageProps)
-
   // Variables
   const getLayout = Component.getLayout ?? (page => <UserLayout>{page}</UserLayout>)
 

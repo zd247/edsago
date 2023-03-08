@@ -1,6 +1,7 @@
 // ** MUI Imports
 import Box from '@mui/material/Box'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import { useRouter } from 'next/router'
 
 // ** Layout Imports
 // !Do not remove this Layout import
@@ -19,6 +20,7 @@ import { useSettings } from 'src/@core/hooks/useSettings'
 const UserLayout = ({ children }) => {
   // ** Hooks
   const { settings, saveSettings } = useSettings()
+  const { pathname } = useRouter()
 
   /**
    *  The below variable will hide the current layout menu at given screen size.
@@ -28,7 +30,7 @@ const UserLayout = ({ children }) => {
    *  to know more about what values can be passed to this hook.
    *  ! Do not change this value unless you know what you are doing. It can break the template.
    */
-  const hidden = useMediaQuery(theme => theme.breakpoints.down('lg'))
+  const hidden = useMediaQuery(theme => theme.breakpoints.down('lg')) || pathname === '/'
 
   const UpgradeToProImg = () => {
     return (
