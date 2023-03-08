@@ -1,9 +1,10 @@
+import classnames from 'classnames'
 import styles from './Header.module.scss'
 
 const Header = () => {
   return (
     <div className={styles['site-header']}>
-      <div className={styles['header-shape header-shape-1']}>
+      <div className={classnames(styles['header-shape'], styles['header-shape-1'])}>
         <svg width='337' height='222' viewBox='0 0 337 222' xmlns='http://www.w3.org/2000/svg'>
           <defs>
             <linearGradient x1='50%' y1='55.434%' x2='50%' y2='0%' id='header-shape-1'>
@@ -19,7 +20,7 @@ const Header = () => {
           />
         </svg>
       </div>
-      <div className={styles['header-shape header-shape-2']}>
+      <div className={classnames(styles['header-shape'], styles['header-shape-2'])}>
         <svg
           width='128'
           height='128'
@@ -33,18 +34,12 @@ const Header = () => {
               <stop stopColor='#FF6381' offset='100%' />
             </linearGradient>
           </defs>
-          <circle
-            cx='64'
-            cy='64'
-            r='64'
-            fill='url(#header-shape-2)'
-            fillRule='evenodd'
-          />
+          <circle cx='64' cy='64' r='64' fill='url(#header-shape-2)' fillRule='evenodd' />
         </svg>
       </div>
       <div className={styles['container']}>
         <div className={styles['site-header-inner']}>
-          <div className={styles['brand header-brand']}>
+          <div className={classnames(styles['brand'], styles['header-brand'])}>
             <h1 className={styles['m-0']}>
               <a href='#'>
                 <svg width='32' height='32' xmlns='http://www.w3.org/2000/svg'>
