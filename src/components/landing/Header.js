@@ -39,6 +39,7 @@ const Header = () => {
       </div>
       <div className={styles['container']}>
         <div className={styles['site-header-inner']}>
+          {/* this does not have css */}
           <div className={classnames(styles['brand'], styles['header-brand'])}>
             <h1 className={styles['m-0']}>
               <a href='#'>
