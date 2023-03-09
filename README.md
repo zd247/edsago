@@ -43,3 +43,9 @@ devDependencies:
 "eslint-plugin-import": "^2.25.4": An ESLint plugin that provides linting rules for import statements.
 "next-transpile-modules": "^9.0.0": A tool for transpiling and bundling npm modules in Next.js projects.
 "prettier": "2.5.1": A code formatter that enforces consistent code style.
+
+
+## CSS convention
+
+for styles['class-name'] : this is referencing the core style file
+for styles.className: for later use, custom styling from own developer.
