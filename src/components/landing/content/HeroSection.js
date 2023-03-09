@@ -7,10 +7,9 @@ const HeroSection = () => {
       <div className={styles['container']}>
         <div className={styles['hero-inner']}>
           <div className={styles['hero-copy']}>
-            <h1 className={classnames(styles['hero-title'], styles['mt-0'])}>Landing template for startups</h1>
+            <h1 className={classnames(styles['hero-title'], styles['mt-0'])}>edward saigon</h1>
             <p className={styles['hero-paragraph']}>
-              Our landing page template works on all devices, so you only have to set it up once, and get beautiful
-              results forever.
+              Edward đi dép lào
             </p>
             <div className={classnames(styles['hero-form'], styles['field'], styles['field-grouped'])}>
               <div className={classnames(styles['control'], styles['control-expanded'])}>
@@ -18,7 +17,7 @@ const HeroSection = () => {
               </div>
               <div className={styles['control']}>
                 <a className={classnames(styles['button'], styles['button-block'], styles['button-primary'])} href='#'>
-                  Early access
+                  Vào
                 </a>
               </div>
             </div>
